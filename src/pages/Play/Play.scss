@@ -1,0 +1,15 @@
+.Play {
+  &__start {
+    padding: 20px 100px;
+    border-radius: 35px;
+    border-width: 0;
+
+    background-color: rgba(164, 148, 255, 0.39);
+
+    transition: 0.3s;
+
+    &:hover {
+    background-color: rgba(164, 148, 255, 0.603);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.AddWord {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+
+  background-color: #ecf3aad5;
+  border-radius: 30px;
+
+  padding: 50px;
+
+  &__title {
+    display: block;
+
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    display: block;
+    padding: 15px 0 15px 15px;
+    border-radius: 15px;
+    border: 0;
+  }
+
+  &__help {
+    color: rgba(255, 80, 80, 0.822);
+    margin: -10px 0;
+  }
+
+  &__button {
+    padding: 15px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #aaf3e3;
+  }
+}

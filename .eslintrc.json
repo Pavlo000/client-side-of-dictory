@@ -1,0 +1,6 @@
+{
+  "extends": "@mate-academy/eslint-config-react-typescript",
+  "rules": {
+    "linebreak-style": ["error", "windows"]
+  }
+}

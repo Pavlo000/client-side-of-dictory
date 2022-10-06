@@ -1,0 +1,21 @@
+.WordItem {
+
+  &__icon {
+    font-size: 25px;
+  }
+
+  &__delete {
+    background-color: transparent;
+    border-width: 0;
+  }
+
+  &__cell {
+    padding: 20px 50px;
+
+    &:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

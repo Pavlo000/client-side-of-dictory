@@ -1,0 +1,33 @@
+.Results {
+  width: 500px;
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.212);
+    margin-bottom: 20px;
+  }
+
+  &__AnsKey {
+    font-size: 18px;
+    font-weight: 600;
+    
+    &--true {
+      color:rgb(39, 163, 1)
+    }
+
+    &--false {
+      color:rgb(196, 0, 0)
+    }
+
+    &--total {
+      color:rgb(39, 163, 1)
+    }
+  }
+
+  &__error {
+    padding: 15px 0;
+  }
+}

@@ -1,0 +1,45 @@
+.Menu {
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 150px;
+    padding: 0 25px 25px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__link {
+    display: block;
+
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+
+    transition: 0.5s;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    &.active {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+}
