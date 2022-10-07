@@ -12,7 +12,7 @@ export const initialState: AnswearsState = {
 };
 
 export const answearsSlice = createSlice({
-  name: 'WordsList',
+  name: 'answears',
   initialState,
   reducers: {
     addTrueAnswears: (state) => {

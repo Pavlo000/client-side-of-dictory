@@ -25,9 +25,7 @@ export const Answears: React.FC<Props> = ({
   );
 
   const [badAnswears, setBadAnswears] = useState<Word[]>(
-    words.filter(
-      (word) => word.id !== questionsId[questionNumber],
-    ).slice(0, 3),
+    words.filter((word) => word.id !== questionsId[questionNumber]).slice(0, 3),
   );
 
   const [randomSortAnswear, setRandomSortAnswears] = useState(
