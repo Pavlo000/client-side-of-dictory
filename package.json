@@ -2,7 +2,7 @@
   "name": "client-side",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pavlo000.github.io/dictory-test-task",
+  "homepage": "http://pavlo000.github.io/client-side-of-dictory",
   "dependencies": {
     "@mate-academy/students-ts-config": "0.0.4",
     "@reduxjs/toolkit": "^1.8.5",
