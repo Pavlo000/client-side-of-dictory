@@ -7,7 +7,7 @@ type Props = {
   loading: boolean;
 };
 
-export const Home: React.FC <Props> = ({ loading }) => {
+export const Home: React.FC<Props> = ({ loading }) => {
   return (
     <main className="Home">
       <h2 className="Home__title">Your saved words</h2>

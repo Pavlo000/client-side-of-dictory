@@ -24,7 +24,11 @@ export const Answears: React.FC<Props> = ({
     (word) => word.id === questionsId[questionNumber],
   );
 
-  const [badAnswears, setBadAnswears] = useState<Word[]>([]);
+  const [badAnswears, setBadAnswears] = useState<Word[]>(
+    words.filter(
+      (word) => word.id !== questionsId[questionNumber],
+    ).slice(0, 3),
+  );
 
   const [randomSortAnswear, setRandomSortAnswears] = useState(
     getRandomNumber(0, badAnswears.length - 1),
@@ -71,12 +75,11 @@ export const Answears: React.FC<Props> = ({
           }
 
           return (
-            <li>
+            <li key={badAnswear.id}>
               <button
                 className="Answears__button"
                 type="button"
                 onClick={() => handleClick(false)}
-                key={badAnswear.id}
               >
                 {badAnswear.translWord}
               </button>
