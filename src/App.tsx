@@ -7,7 +7,6 @@ import { Play } from './pages/Play';
 import { getWords } from './api';
 import { useAppDispatch } from './app/hooks';
 import { setWords } from './features/WordsList/WordsListSlice';
-import { Loader } from './features/Loader';
 import { Results } from './pages/Results';
 import { Menu } from './features/Menu';
 
@@ -53,50 +52,47 @@ const App: React.FC = () => {
         <h1 className="title has-text-centered">{hasErrorAPI}</h1>
       )}
 
-      {!hasErrorAPI
-        && (loading ? (
-          <Loader />
-        ) : (
-          <Routes>
-            <Route
-              path="/home"
-              element={(
-                <div className="App__main">
-                  <Home />
-                </div>
-              )}
-            />
+      {!hasErrorAPI && (
+        <Routes>
+          <Route
+            path="/home"
+            element={(
+              <div className="App__main">
+                <Home loading={loading} />
+              </div>
+            )}
+          />
 
-            <Route
-              path="/form"
-              element={(
-                <div className="App__main">
-                  <Form />
-                </div>
-              )}
-            />
+          <Route
+            path="/form"
+            element={(
+              <div className="App__main">
+                <Form />
+              </div>
+            )}
+          />
 
-            <Route
-              path="/play"
-              element={(
-                <div className="App__main">
-                  <Play />
-                </div>
-              )}
-            />
+          <Route
+            path="/play"
+            element={(
+              <div className="App__main">
+                <Play />
+              </div>
+            )}
+          />
 
-            <Route
-              path="/results"
-              element={(
-                <div className="App__main">
-                  <Results />
-                </div>
-              )}
-            />
+          <Route
+            path="/results"
+            element={(
+              <div className="App__main">
+                <Results />
+              </div>
+            )}
+          />
 
-            <Route path="/" element={<Navigate to="/home" />} />
-          </Routes>
-        ))}
+          <Route path="/" element={<Navigate to="/home" />} />
+        </Routes>
+      )}
     </div>
   );
 };
