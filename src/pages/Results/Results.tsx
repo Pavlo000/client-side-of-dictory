@@ -7,9 +7,11 @@ export const Results: React.FC = () => {
   const falseAnswears = useAppSelector((state) => state.answears.falseAnswears);
   const persentOfTrueAnswears = (trueAnswears + falseAnswears) * trueAnswears;
 
+  const hasResults = trueAnswears + falseAnswears >= 10;
+
   return (
     <main className="Results">
-      {!!trueAnswears && !!falseAnswears && (
+      {hasResults && (
         <>
           <div className="Results__block">
             <p className="Results__AnsKey Results__AnsKey--true">
@@ -36,7 +38,7 @@ export const Results: React.FC = () => {
           </div>
         </>
       )}
-      {!trueAnswears && !falseAnswears && (
+      {!hasResults && (
         <div className="Results__block">
           <div className="Results__error">Results not exist</div>
         </div>
