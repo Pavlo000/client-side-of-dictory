@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/dictory-test-task/static/css/main.a9860817.css",
-    "main.js": "/dictory-test-task/static/js/main.fdeb2f1c.js",
-    "index.html": "/dictory-test-task/index.html",
-    "main.a9860817.css.map": "/dictory-test-task/static/css/main.a9860817.css.map",
-    "main.fdeb2f1c.js.map": "/dictory-test-task/static/js/main.fdeb2f1c.js.map"
+    "main.css": "/client-side-of-dictory/static/css/main.a9860817.css",
+    "main.js": "/client-side-of-dictory/static/js/main.fdeb2f1c.js",
+    "index.html": "/client-side-of-dictory/index.html",
+    "main.a9860817.css.map": "/client-side-of-dictory/static/css/main.a9860817.css.map",
+    "main.fdeb2f1c.js.map": "/client-side-of-dictory/static/js/main.fdeb2f1c.js.map"
   },
   "entrypoints": [
     "static/css/main.a9860817.css",
