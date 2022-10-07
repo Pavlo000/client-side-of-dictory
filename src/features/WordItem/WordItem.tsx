@@ -29,12 +29,8 @@ export const WordItem: React.FC<Props> = ({ word }) => {
           <i className="WordItem__icon fas fa-square-xmark" />
         </button>
       </td>
-      <td className="WordItem__cell">
-        {word.origWord}
-      </td>
-      <td className="WordItem__cell">
-        {word.translWord}
-      </td>
+      <td className="WordItem__cell">{word.origWord}</td>
+      <td className="WordItem__cell">{word.translWord}</td>
     </tr>
   );
 };

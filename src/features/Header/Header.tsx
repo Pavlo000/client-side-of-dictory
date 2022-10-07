@@ -10,7 +10,9 @@ export const Header: React.FC = () => {
         <h2 className="Header__subtitle">Welcome, to your own libary</h2>
       </div>
 
-      <Link to="/form" className="Header__link">+Add new</Link>
+      <Link to="/form" className="Header__link">
+        +Add new
+      </Link>
     </header>
   );
 };

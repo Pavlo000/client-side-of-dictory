@@ -6,11 +6,7 @@ export const Menu: React.FC = () => {
   return (
     <menu className="Menu">
       <div className="Menu__logo-container">
-        <img
-          src="./logo.svg"
-          alt="logo"
-          className="Menu__logo"
-        />
+        <img src="./logo.svg" alt="logo" className="Menu__logo" />
       </div>
 
       <ul className="Menu__list">
@@ -20,7 +16,6 @@ export const Menu: React.FC = () => {
             className={({ isActive }) => `Menu__link ${isActive && 'active'}`}
           >
             <i className="Menu__icon fas fa-home" />
-
             Home
           </NavLink>
         </li>
@@ -31,7 +26,6 @@ export const Menu: React.FC = () => {
             className={({ isActive }) => `Menu__link ${isActive && 'active'}`}
           >
             <i className="Menu__icon fas fa-circle-play" />
-
             Play
           </NavLink>
         </li>

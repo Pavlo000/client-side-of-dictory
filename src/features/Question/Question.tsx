@@ -36,9 +36,7 @@ export const Question: React.FC = () => {
     <div className="Question">
       {question && (
         <>
-          <h3>
-            {`What does mean the word '${question.origWord}'?`}
-          </h3>
+          <h3>{`What does mean the word '${question.origWord}'?`}</h3>
 
           <Answears
             questionsId={questionsId}

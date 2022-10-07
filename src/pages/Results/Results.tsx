@@ -38,9 +38,7 @@ export const Results: React.FC = () => {
       )}
       {!trueAnswears && !falseAnswears && (
         <div className="Results__block">
-          <div className="Results__error">
-            Results not exist
-          </div>
+          <div className="Results__error">Results not exist</div>
         </div>
       )}
     </main>

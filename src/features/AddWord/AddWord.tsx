@@ -47,13 +47,8 @@ export const AddWord: React.FC = () => {
   };
 
   return (
-    <form
-      className="AddWord"
-      onSubmit={handleSubmit}
-    >
-      <h2 className="AddWord__title">
-        Add word
-      </h2>
+    <form className="AddWord" onSubmit={handleSubmit}>
+      <h2 className="AddWord__title">Add word</h2>
 
       <input
         type="text"
@@ -71,14 +66,9 @@ export const AddWord: React.FC = () => {
         onChange={(event) => setTranslWord(event.target.value)}
       />
 
-      <p className="AddWord__help">
-        {errorSubmit}
-      </p>
+      <p className="AddWord__help">{errorSubmit}</p>
 
-      <button
-        type="submit"
-        className="AddWord__button"
-      >
+      <button type="submit" className="AddWord__button">
         Add
       </button>
     </form>

@@ -21,7 +21,7 @@ export const wordsListSlice = createSlice({
       state.words.push(action.payload);
     },
     deleteWord: (state, action: PayloadAction<string>) => {
-      state.words = state.words.filter(word => word.id !== action.payload);
+      state.words = state.words.filter((word) => word.id !== action.payload);
     },
   },
 });

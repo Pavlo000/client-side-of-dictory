@@ -11,15 +11,9 @@ export const WordsList: React.FC = () => {
       <table className="WordsList__table">
         <thead>
           <tr>
-            <th className="WordsList__header-item">
-              Delete
-            </th>
-            <th className="WordsList__header-item">
-              English
-            </th>
-            <th className="WordsList__header-item">
-              Ukrainian
-            </th>
+            <th className="WordsList__header-item">Delete</th>
+            <th className="WordsList__header-item">English</th>
+            <th className="WordsList__header-item">Ukrainian</th>
           </tr>
         </thead>
 

@@ -94,10 +94,7 @@ const App: React.FC = () => {
               )}
             />
 
-            <Route
-              path="/"
-              element={<Navigate to="/home" />}
-            />
+            <Route path="/" element={<Navigate to="/home" />} />
           </Routes>
         ))}
     </div>
